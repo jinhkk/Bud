@@ -1,0 +1,134 @@
+@import url(reset.css);
+
+
+header {
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.inner {
+    width: 180rem;
+    height: 15rem;
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+    /* 내부 요소를 flexbox로 배치 → 가로 or 세로 정렬 가능 */
+    flex-direction: column;
+    /* 내부 요소를 세로 가운데로 정렬 */
+    align-items: center;
+}
+
+.htop {
+    width: 100%;
+    height: 40%;
+    /* 부모 요소 높이의 40%만큼 높이를 설정 */
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    /* 내부 요소들을 좌우 끝으로 정렬하고, 사이에 동일한 간격을 둠 */
+    align-items: center;
+    padding: 20px 0;
+}
+
+.hbot {
+    width: 80%;
+    height: 60%;
+    margin: 0 auto;
+    z-index: 99;
+}
+
+.htop h1 {
+    display: inline-block;
+    z-index: 101;
+}
+
+.htop h1 a img {
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 138px;
+    height: 45px;
+}
+
+.searchbox {
+    margin-top: 15px;
+    width: 165px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    /* 마우스 커서 갖다대면 모양 바뀜 */
+    z-index: 101;
+}
+
+.budbeats {
+    width: 145px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.budbeats a {
+    width: 126px;
+    height: 39px;
+    display: block;
+    border: 1px solid red;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.flow {
+    display: flex;
+    gap: 10px;
+    animation: flow 25s linear infinite;
+    transform: translateX(-50%);
+}
+
+@keyframes flow {
+    from {
+        position: relative;
+        left: 0;
+    }
+
+    to {
+        position: relative;
+        left: -1000px;
+    }
+}
+
+.budbeats a img {
+    margin-top: 10px;
+    width: 100px;
+}
+
+.search {
+    width: 24px;
+    height: 25px;
+    display: inline-block;
+    z-index: 91;
+}
+
+.search img {
+    width: 100%;
+    height: 100%;
+}
+
+.searchf {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    transition: all 1s;
+}
+
+.search_bg {
+    display: flex;
+    width: 100%;
+    height: 28.4rem;
+    align-items: center;
+    justify-content: center;
+    
+}
