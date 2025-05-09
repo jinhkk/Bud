@@ -207,3 +207,38 @@ header {
     text-decoration: none;
     letter-spacing: -0.05rem;
 }
+
+.hbot ul li a:hover{
+    color: red;
+}
+
+.menu_nav {
+    z-index: 9999;
+    position: relative;
+    top: 40px;
+    list-style: none;
+}
+
+.menu_nav li {
+    width: 100%;
+    height: 42px;
+}
+
+.menu_nav li a {
+    /* width: 100%; */
+    height: 100%;
+    line-height: 42px;
+}
+
+.popup_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0,0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
