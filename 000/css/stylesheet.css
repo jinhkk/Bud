@@ -1,34 +1,29 @@
-@import url(reset.css);
-
+html{
+    font-size: 10px;
+}
 
 header {
     width: 100%;
-    background-color: white;
+    background-color: #fff;
     position: absolute;
     overflow: hidden;
     z-index: 999;
 }
-
 .inner {
     width: 180rem;
     height: 15rem;
-    background-color: white;
+    background-color: #fff;
     margin: 0 auto;
     display: flex;
-    /* 내부 요소를 flexbox로 배치 → 가로 or 세로 정렬 가능 */
     flex-direction: column;
-    /* 내부 요소를 세로 가운데로 정렬 */
     align-items: center;
 }
-
 .htop {
     width: 100%;
     height: 40%;
-    /* 부모 요소 높이의 40%만큼 높이를 설정 */
-    background-color: white;
-    display: flex;
+    background-color: #fff;
+    display: flex ;
     justify-content: space-between;
-    /* 내부 요소들을 좌우 끝으로 정렬하고, 사이에 동일한 간격을 둠 */
     align-items: center;
     padding: 20px 0;
 }
@@ -39,19 +34,17 @@ header {
     margin: 0 auto;
     z-index: 99;
 }
-
 .htop h1 {
     display: inline-block;
     z-index: 101;
+   
 }
-
 .htop h1 a img {
     margin-top: 15px;
     margin-left: 20px;
-    width: 138px;
+    width:138px;
     height: 45px;
 }
-
 .searchbox {
     margin-top: 15px;
     width: 165px;
@@ -60,7 +53,6 @@ header {
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    /* 마우스 커서 갖다대면 모양 바뀜 */
     z-index: 101;
 }
 
@@ -69,8 +61,8 @@ header {
     height: 25px;
     display: flex;
     align-items: center;
+   
 }
-
 .budbeats a {
     width: 126px;
     height: 39px;
@@ -83,19 +75,16 @@ header {
 .flow {
     display: flex;
     gap: 10px;
-    animation: flow 25s linear infinite;
+    animation:  flow 25s linear infinite;
     transform: translateX(-50%);
 }
 
 @keyframes flow {
-    from {
-        position: relative;
-        left: 0;
+    from{position: relative;
+    left: 0;
     }
-
-    to {
-        position: relative;
-        left: -1000px;
+    to{position: relative;
+    left: -1000px;
     }
 }
 
@@ -103,14 +92,12 @@ header {
     margin-top: 10px;
     width: 100px;
 }
-
 .search {
     width: 24px;
     height: 25px;
     display: inline-block;
     z-index: 91;
 }
-
 .search img {
     width: 100%;
     height: 100%;
@@ -120,7 +107,7 @@ header {
     width: 100%;
     position: absolute;
     top: 0;
-    display: none;
+    display: none ;
     transition: all 1s;
 }
 
@@ -132,14 +119,14 @@ header {
     justify-content: center;
     position: fixed;
     z-index: 100;
-    background-color: white;
+    background-color: #fff;
 }
 
 .search_nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #fff;
     width: 60%;
 }
 
@@ -172,36 +159,33 @@ header {
     position: absolute;
     right: 24px;
     cursor: pointer;
-    bottom: 20px;
-    right: 0;
+    bottom: 20px; right: 0;
 }
 
 .hbot > ul {
     width: 50%;
     height: 100%;
     list-style: none;
-    background-color: white;
+    background-color: #fff;
     margin: 0 auto;
     display: flex;
 }
-
 .hbot > ul > li {
     width: 25%;
     line-height: 102px;
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
-}
 
-.hbot > ul > li ::after {
+}
+.hbot > ul > li::after {
     display: block;
     height: 500px;
     background-color: #181818;
     opacity: 0.3;
     z-index: 998;
 }
-
-.hbot > ul > li > a {
+.hbot > ul > li a {
     width: 100%;
     display: block;
     color: #0A0541;
@@ -209,14 +193,14 @@ header {
     letter-spacing: -0.05em;
 }
 
-.hbot ul li a:hover{
+.hbot ul li a:hover {
     color: red;
 }
 
 .menu_nav {
     z-index: 9999;
     position: relative;
-    top: 40px;
+    top: 40px;  
     list-style: none;
 }
 
@@ -225,8 +209,9 @@ header {
     height: 42px;
 }
 
+
 .menu_nav li a {
-    /* width: 100%; */
+    width: 100%;
     height: 100%;
     line-height: 42px;
 }
@@ -235,7 +220,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgb(0, 0, 0,0.5);
+    background-color: rgb(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
     z-index: 9999;
@@ -243,3 +228,35 @@ header {
     align-items: center;
     justify-content: center;
 }
+.popup_in  {
+    width: 35%;
+    background-color: #fff;
+    text-align: center;
+    padding: 60px 50px;
+}
+.popup_in > p {
+    font-size: 42px;
+    color: #0A0541;
+}
+.pselect {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+.pselect button  {
+    width: 41%;
+    outline: none;
+    border: none;
+    background-color: #dc0019;
+    color: #fff;
+    text-decoration: none;
+    font-size: 32px;
+    line-height: 68px;
+    display: block;
+    cursor: pointer;
+}
+.pwar {
+    margin-top: 30px;
+}
+

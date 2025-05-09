@@ -83,10 +83,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 10px;
 }
- /* 이거도 무시하셈 */
+
+/* 이거도 무시하셈 */
 /* #cursor {
     background-color: #fff;
     color: #0A0541;
@@ -101,7 +103,7 @@ html{
      font-family: 'pb';
      display: none;
 } */
-  
+
 header {
     width: 100%;
     background-color: #fff;
@@ -109,6 +111,7 @@ header {
     overflow: hidden;
     z-index: 999;
 }
+
 .inner {
     width: 180rem;
     height: 15rem;
@@ -118,11 +121,12 @@ header {
     flex-direction: column;
     align-items: center;
 }
+
 .htop {
     width: 100%;
     height: 40%;
     background-color: #fff;
-    display: flex ;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
@@ -134,17 +138,20 @@ header {
     margin: 0 auto;
     z-index: 99;
 }
+
 .htop h1 {
     display: inline-block;
     z-index: 101;
-   
+
 }
+
 .htop h1 a img {
     margin-top: 15px;
     margin-left: 20px;
-    width:138px;
+    width: 138px;
     height: 45px;
 }
+
 .searchbox {
     margin-top: 15px;
     width: 165px;
@@ -161,8 +168,9 @@ header {
     height: 25px;
     display: flex;
     align-items: center;
-   
+
 }
+
 .budbeats a {
     width: 126px;
     height: 39px;
@@ -175,16 +183,19 @@ header {
 .flow {
     display: flex;
     gap: 10px;
-    animation:  flow 25s linear infinite;
+    animation: flow 25s linear infinite;
     transform: translateX(-50%);
 }
 
 @keyframes flow {
-    from{position: relative;
-    left: 0;
+    from {
+        position: relative;
+        left: 0;
     }
-    to{position: relative;
-    left: -1000px;
+
+    to {
+        position: relative;
+        left: -1000px;
     }
 }
 
@@ -192,12 +203,14 @@ header {
     margin-top: 10px;
     width: 100px;
 }
+
 .search {
     width: 24px;
     height: 25px;
     display: inline-block;
     z-index: 91;
 }
+
 .search img {
     width: 100%;
     height: 100%;
@@ -207,7 +220,7 @@ header {
     width: 100%;
     position: absolute;
     top: 0;
-    display: none ;
+    display: none;
     transition: all 1s;
 }
 
@@ -250,7 +263,7 @@ header {
 }
 
 .search_nav input:hover {
-    border-bottom: 1px solid #181818; 
+    border-bottom: 1px solid #181818;
 }
 
 .searchimg {
@@ -259,10 +272,11 @@ header {
     position: absolute;
     right: 24px;
     cursor: pointer;
-    bottom: 20px; right: 0;
+    bottom: 20px;
+    right: 0;
 }
 
-.hbot > ul {
+.hbot>ul {
     width: 50%;
     height: 100%;
     list-style: none;
@@ -270,7 +284,8 @@ header {
     margin: 0 auto;
     display: flex;
 }
-.hbot > ul > li {
+
+.hbot>ul>li {
     width: 25%;
     line-height: 102px;
     text-align: center;
@@ -278,14 +293,16 @@ header {
     font-size: 1.5rem;
 
 }
-.hbot > ul > li::after {
+
+.hbot>ul>li::after {
     display: block;
     height: 500px;
     background-color: #181818;
     opacity: 0.3;
     z-index: 998;
 }
-.hbot > ul > li a {
+
+.hbot>ul>li a {
     width: 100%;
     display: block;
     color: #0A0541;
@@ -300,7 +317,7 @@ header {
 .menu_nav {
     z-index: 9999;
     position: relative;
-    top: 40px;  
+    top: 40px;
     list-style: none;
 }
 
@@ -328,23 +345,27 @@ header {
     align-items: center;
     justify-content: center;
 }
-.popup_in  {
+
+.popup_in {
     width: 35%;
     background-color: #fff;
     text-align: center;
     padding: 60px 50px;
 }
-.popup_in > p {
+
+.popup_in>p {
     font-size: 42px;
     color: #0A0541;
 }
+
 .pselect {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 30px;
 }
-.pselect button  {
+
+.pselect button {
     width: 41%;
     outline: none;
     border: none;
@@ -356,21 +377,25 @@ header {
     display: block;
     cursor: pointer;
 }
+
 .pwar {
     margin-top: 30px;
 }
+
 .pwar span {
     font-size: 17px;
     font-weight: 500;
     color: #0a0541;
     line-height: 1.6;
 }
-.cookie { 
+
+.cookie {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     position: fixed;
-    bottom: 30px; left: 30px;
+    bottom: 30px;
+    left: 30px;
     background: url('../images/cookie/ot_persistent_cookie.png')no-repeat center/cover;
 }
 
@@ -384,9 +409,10 @@ header {
 }
 
 main .mainevent {
-     width: 100%;
-     position: absolute;
-     top: 0; left: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .mainevent ul {
@@ -401,98 +427,126 @@ main .mainevent {
     display: block;
     position: relative;
 }
-.mainevent .first a  {
+
+.mainevent .first a {
     background: url("../images/mainbanner/kid_mili.jpg") no-repeat center/cover;
     display: block;
 }
-.firsttext{
-   text-decoration: none;
-   position: absolute;
-   top: 15%; left: 5%;
+
+.firsttext {
+    text-decoration: none;
+    position: absolute;
+    top: 15%;
+    left: 5%;
 }
+
 .firsttext h2 {
     font-weight: bold;
     font-size: 80px;
     color: #fff;
 }
+
 .firsttext p {
     font-size: 3rem;
     color: #fff;
 }
+
 .mainevent .second a {
     background: url("../images/mainbanner/main_banner2.jpg") no-repeat center/cover;
 }
+
 .second a .stext {
     position: absolute;
-    top: 15%; left: 5%;
+    top: 15%;
+    left: 5%;
 }
+
 .stext h2 {
     font-weight: bold;
     color: #fff;
     font-size: 80px;
 }
+
 .stext p {
     color: #fff;
     font-size: 3rem;
 }
+
 .mainevent .third a {
-     background: url("../images/mainbanner/main_banner3.jpg") no-repeat center/cover;
+    background: url("../images/mainbanner/main_banner3.jpg") no-repeat center/cover;
 }
-.mobr{
+
+.mobr {
     display: none;
 }
+
 .third .trdtext {
-   position: absolute;
-   top: 15%; left: 5%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
 }
+
 .third .trdtext h2 {
     font-weight: bold;
     font-size: 80px;
     color: #0A0541;
 }
+
 .third .trdtext p {
     font-size: 3rem;
     color: #0A0541;
 }
+
 .mainevent .four a {
     background: url("../images/mainbanner/main_banner4.jpg") no-repeat center/cover;
 }
+
 .fourtext {
     position: absolute;
-    top: 15%; left: 5%;
+    top: 15%;
+    left: 5%;
 }
+
 .fourtext h2 {
     font-size: 80px;
     font-weight: bold;
     color: #fff;
 }
+
 .fourtext p {
     color: #fff;
     font-size: 3rem;
 }
+
 .mainevent .five a {
     background: url("../images/mainbanner/mainbanner5.jpg") no-repeat center/cover;
 }
+
 .fivetext {
     position: absolute;
-    top: 15%; left: 5%;
+    top: 15%;
+    left: 5%;
 }
+
 .fivetext h2 {
     font-weight: bold;
     font-size: 80px;
     color: #fff;
 }
+
 .fivetext p {
-    color:#fff;
+    color: #fff;
     font-size: 3rem;
 }
+
 .artist {
     width: 100%;
     height: 924px;
-    display: flex ;
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .artinner {
     width: 90%;
     margin: 70px 50px;
@@ -500,10 +554,12 @@ main .mainevent {
     display: flex;
     justify-content: center;
 }
+
 .title {
     width: 100%;
     line-height: 120px;
 }
+
 .title h3 {
     font-size: 80px;
     font-weight: bold;
@@ -535,33 +591,39 @@ main .mainevent {
 }
 
 @keyframes slider {
-    from{transform: translateX(0px);
+    from {
+        transform: translateX(0px);
     }
-    to{transform: translateX(-5307.81px);
+
+    to {
+        transform: translateX(-5307.81px);
     }
 }
 
-.slider:hover  {
+.slider:hover {
     animation-play-state: paused;
 }
 
 .slider li {
     position: relative;
 }
-.slider li >  p {
+
+.slider li>p {
     text-align: center;
     text-decoration: none;
     margin-top: 2rem;
     display: none;
 }
+
 .slider img {
-      display: block;
-      overflow: hidden;
+    display: block;
+    overflow: hidden;
 }
 
 .name {
     position: absolute;
-    top: 0; left: 0; 
+    top: 0;
+    left: 0;
     width: 454px;
     height: 454px;
     border-radius: 50%;
@@ -574,7 +636,8 @@ main .mainevent {
 
 .name p {
     position: absolute;
-    bottom: 19%; left: 50%;
+    bottom: 19%;
+    left: 50%;
     transform: translateX(-50%);
     color: #fff;
     font-size: 36px;
@@ -582,9 +645,10 @@ main .mainevent {
     transition: all 0.5s;
 }
 
-.slider  li:hover .name p {
+.slider li:hover .name p {
     visibility: visible;
 }
+
 .slider li:hover .name {
     opacity: 1;
     visibility: visible;
@@ -601,6 +665,7 @@ footer {
     background-color: #0A0541;
     position: relative;
 }
+
 .finner {
     width: 100%;
     height: 80%;
@@ -609,30 +674,36 @@ footer {
     display: flex;
     align-items: center;
 }
+
 .flogo {
     width: 15%;
     margin-left: 50px;
     height: 320px;
 }
+
 .flogo img {
     width: 85%;
     position: relative;
     left: 10px;
-} 
+}
+
 .policy {
     width: 35%;
     display: flex;
     flex-direction: column;
-    margin-right:100px;
+    margin-right: 100px;
     height: 320px;
 }
+
 .policy .ptop {
     width: 80rem;
     height: 20%;
 }
+
 .ptop span {
     width: 50%;
 }
+
 .ptop span:nth-child(1) a {
     color: #d19f58;
     text-decoration: none;
@@ -641,56 +712,67 @@ footer {
     padding-right: 20px;
     border-right: 2px solid rgba(255, 255, 255, 0.1);
 }
+
 .ptop span:nth-child(2) a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     padding-left: 20px;
 }
+
 .policy p {
     color: #fff;
     font-weight: 300;
     margin-bottom: 30px;
     line-height: 30px;
 }
+
 .policy p a {
     text-decoration: none;
     color: #fff;
 }
+
 .policy .copy {
     width: 100%;
-    color: rgb(255 , 255 ,255 , 0.6);
+    color: rgb(255, 255, 255, 0.6);
     font-size: 16px;
     font-weight: lighter;
 }
+
 .policy::after {
     content: '';
     display: block;
     clear: both;
 }
+
 /* policy end */
 .sns {
     width: 40%;
     float: left;
     height: 320px;
 }
+
 .sns .upcon .uptitle {
     margin-bottom: 10px;
     color: #fff;
 }
-.sns ul  {
+
+.sns ul {
     list-style: none;
 }
+
 .upcon ul::after {
     content: '';
     display: block;
     clear: both;
 }
-.sns ul  li {
+
+.sns ul li {
     float: left;
     margin-right: 10px;
 }
-.sns ul  li a {
+
+.sns ul li a {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -698,21 +780,25 @@ footer {
     display: inline-block;
     position: relative;
 }
-.sns ul  li a img {
+
+.sns ul li a img {
     position: absolute;
-    top: 50%; left: 50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .sns .lowcon .lowtitle {
     margin-bottom: 10px;
     color: #fff;
 }
+
 .lowcon ul::after {
     content: '';
     display: block;
     clear: both;
 }
+
 .upcon {
     margin-bottom: 40px;
 }
-
