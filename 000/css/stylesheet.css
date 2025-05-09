@@ -11,6 +11,20 @@ html {
     font-size: 10px;
 }
 
+#cursor {
+    background-color: #fff;
+    color: #0A0541;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border:  1px solid;
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     font-weight: bold;
+     font-family: 'pb';
+     display: none;
+}
 header {
     width: 100%;
     background-color: #fff;
